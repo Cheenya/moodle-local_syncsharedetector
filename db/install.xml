@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XMLDB PATH="local/syncsharedetector/db" VERSION="2025061300" COMMENT="SyncShare Detector log table">
+    <TABLE NAME="local_syncsharedetector_log" COMMENT="Detection of SyncShare usage">
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true" COMMENT="Primary key"/>
+        <FIELD NAME="userid" TYPE="int" LENGTH="10" NOTNULL="true" COMMENT="User ID"/>
+        <FIELD NAME="detectedat" TYPE="char" LENGTH="30" NOTNULL="true" COMMENT="Detection timestamp"/>
+        <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" COMMENT="Record creation time"/>
+        <KEYS>
+            <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        </KEYS>
+    </TABLE>
+</XMLDB>
